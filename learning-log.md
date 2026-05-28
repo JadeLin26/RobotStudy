@@ -44,7 +44,7 @@
 - [ ] 确认/安装 VS Code
 - [ ] 记录本机 CPU / GPU / RAM 到 docs/environment-notes.md
 - [ ] 下载并运行 **Isaac Sim Compatibility Checker**
-- [ ] 若 Python 要并行学：开始 Coursera「Programming for Everybody」第 1 周
+- [ ] 用 AI 辅助完成第一个 JSON 读取脚本（不必上网课，见 docs/how-to-learn-with-ai.md）
 
 ### Notes
 
