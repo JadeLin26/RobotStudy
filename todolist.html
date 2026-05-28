@@ -486,7 +486,7 @@
     load();
     // Day 1 defaults: repo setup items pre-checked after first publish
     if (!localStorage.getItem(STORAGE_KEY)) {
-      ['d1-1', 'd1-3'].forEach(id => {
+      ['d1-1', 'd1-2', 'd1-3'].forEach(id => {
         const el = document.getElementById(id);
         if (el) { el.checked = true; syncLi(el); }
       });
