@@ -1,37 +1,32 @@
 ﻿# Environment Notes
 
-Record machine specs and tool versions here. Update on Day 2 after running Isaac Sim Compatibility Checker.
+> Day 2 填写完整；Day 1 仅记录已探测项。
 
-## Machine (fill on Day 2)
+## Day 1 已确认
+
+| Tool | Status | Version / Note |
+|------|--------|----------------|
+| Git | Installed | 2.52.0.windows.1 |
+| Python | Installed | 3.12.8（学习用 OK；Isaac Sim 5.x 目标 **3.11**） |
+| VS Code | Day 2 确认 | code CLI |
+| Isaac Sim Compatibility Checker | Day 2 运行 | |
+
+## Machine（Day 2 填写）
 
 | Item | Value |
 |------|--------|
-| OS | |
+| OS | Windows 10 (build 19044) |
 | CPU | |
 | GPU | |
 | VRAM | |
 | RAM | |
-| Isaac Sim Compatibility Checker | ☐ Pass / ☐ Fail / ☐ Not run yet |
+| Checker 结果 | Pass / Fail / 未测 |
 
-## Installed tools
+## Remote fallback（若 Checker 失败）
 
-| Tool | Target version | Installed | Notes |
-|------|----------------|-----------|-------|
-| Python | 3.11 | | |
-| Git | latest | | |
-| VS Code | latest | | |
-| Blender | 4.5 LTS+ | | |
-| Isaac Sim | 5.1 stable | | After checker pass |
-| Isaac Lab | aligned 5.1 | | Month 8+ |
-
-## Remote / fallback plan
-
-If local hardware fails checker:
-
-- [ ] Document blocker in learning-log
-- [ ] Evaluate remote RTX workstation / headless streaming
-- [ ] Do **not** buy Jetson as Isaac Sim substitute
+- [ ] 在 learning-log 记录 blocker
+- [ ] 评估远程 RTX 工作站
+- [ ] **不买** Jetson 代替 Isaac Sim 开发机
 
 ---
-
-*Last updated: 2026-05-28 (Day 1 — placeholder)*
+*Updated: 2026-05-28 Day 1*

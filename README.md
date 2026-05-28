@@ -1,26 +1,29 @@
 ﻿# RobotStudy
 
-**BD-X Inspired Expressive Robot Character Study**
+**BD-X Inspired Expressive Robot Character Study**  
+受 BD-X 启发的角色机器人表达研究 · [24 个月路线图](deep-research-report.md)
 
-24-month learning roadmap: Blender, OpenUSD, Isaac Sim 5.1, Isaac Lab, Python.
+## 进度
 
-## Links
+| 阶段 | 状态 |
+|------|------|
+| Day 1 立项 | **完成**（2026-05-28） |
+| Day 2 环境 | 下一步 |
 
-- [todolist.html](todolist.html) - interactive tracker (14-day / 12-week / 24-month)
-- [docs/project-charter.md](docs/project-charter.md) - scope and success criteria
-- [learning-log.md](learning-log.md) - daily notes
-- [deep-research-report.md](deep-research-report.md) - full research report
+## 快速入口
 
-## Day 1 checklist
+| 文件 | 用途 |
+|------|------|
+| [todolist.html](todolist.html) | 交互待办（14天 / 12周 / 24月） |
+| [docs/project-charter.md](docs/project-charter.md) | 范围、三档目标、技术栈 |
+| [docs/day1-scope-confirmation.md](docs/day1-scope-confirmation.md) | Day 1 范围签字 |
+| [learning-log.md](learning-log.md) | 每日学习日志 |
+| [docs/environment-notes.md](docs/environment-notes.md) | 硬件与工具版本（Day 2 填） |
 
-1. Repo + README + charter + learning log
-2. Open todolist.html in browser
-3. Day 2: install tools + Isaac Sim Compatibility Checker
+## 技术栈（稳定车道）
 
-## Stack (stable lane)
-
-Blender 4.5 LTS+ | Isaac Sim 5.1 | Isaac Lab (5.1) | Python 3.11
+Blender 4.5 LTS+ · Isaac Sim 5.1 · Isaac Lab (5.1) · Python 3.11
 
 ## Author
 
-https://github.com/JadeLin26
+[JadeLin26](https://github.com/JadeLin26)
