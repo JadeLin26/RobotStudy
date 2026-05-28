@@ -194,7 +194,7 @@
       <p class="phase-title">每周 6 天 + 1 休 · 详见 docs/final-goal.md（默认周日）</p>
       <div class="task-group"><ul class="tasks" style="list-style:none">
           <li style="padding:0.6rem 1rem;border-bottom:1px solid var(--border)"><strong>周一</strong> 2-3h · 验收AI产出 + 15min 定角色</li>
-          <li style="padding:0.6rem 1rem;border-bottom:1px solid var(--border)"><strong>周二三</strong> 3-6h · Blender：造型 + 相机装在哪</li>
+          <li style="padding:0.6rem 1rem;border-bottom:1px solid var(--border)"><strong>周二三</strong> 3-6h · Blender：造型 + 头=相机造型</li>
           <li style="padding:0.6rem 1rem;border-bottom:1px solid var(--border)"><strong>周四</strong> 2-3h · 跑 Checker + Python（你点跑）</li>
           <li style="padding:0.6rem 1rem;border-bottom:1px solid var(--border)"><strong>周五六</strong> 深化/录屏；可选 Isaac</li>
           <li style="padding:0.6rem 1rem"><strong>今日只2h？</strong> 优先 Blender 或只验收</li>
@@ -202,7 +202,7 @@
     </section>
 
     <section class="panel" id="panel-phase1">
-      <p class="phase-title">阶段 1（约 2 周）— 造型 + 相机安装位 + 环境/脚本</p>
+      <p class="phase-title">阶段 1（约 2 周）— 造型（头=相机）+ 环境/脚本</p>
       <div class="task-group"><h3><span class="badge badge-ai">AI</span> 代写（你约 1h 验收合计）</h3><ul class="tasks">
           <li data-id="ai-1"><input type="checkbox" id="ai-1"><label for="ai-1">Checker 步骤 + environment-notes 模板</label></li>
           <li data-id="ai-2"><input type="checkbox" id="ai-2"><label for="ai-2">parse_motion_channels.py + 示例 JSON</label></li>
@@ -211,8 +211,8 @@
       </ul></div>
       <div class="task-group"><h3><span class="badge badge-you">你</span> 必做 — 机器人与镜头（10-20h）</h3><ul class="tasks">
           <li data-id="you-1"><input type="checkbox" id="you-1"><label for="you-1">定机型气质：摄影师跟拍感 / 可爱矮胖等（15min）</label></li>
-          <li data-id="you-2"><input type="checkbox" id="you-2"><label for="you-2">Blender blockout：身体 + 双腿 + <strong>相机安装位</strong></label></li>
-          <li data-id="you-3"><input type="checkbox" id="you-3"><label for="you-3">标出重心/相机质量参考（可先静态 2–3 站姿）</label></li>
+          <li data-id="you-2"><input type="checkbox" id="you-2"><label for="you-2">Blender blockout：身体 + 双腿 + <strong>头即相机</strong></label></li>
+          <li data-id="you-3"><input type="checkbox" id="you-3"><label for="you-3">头偏重 + 重心（相机在头上）（可先静态 2–3 站姿）</label></li>
           <li data-id="you-4"><input type="checkbox" id="you-4"><label for="you-4">Turntable 或静态「相机视角」预览（15-30s）</label></li>
       </ul></div>
       <div class="task-group"><h3><span class="badge badge-both">可选</span></h3><ul class="tasks">
@@ -304,8 +304,8 @@
       <p class="phase-title">按最终目标排序的里程碑</p>
       <div class="task-group">
         <ul class="tasks" data-group="milestones-goal">
-          <li data-id="g1"><input type="checkbox" id="g1"><label for="g1"><strong>M1</strong> 机器人造型 + 相机安装点 + 负载质量写在 notes</label></li>
-          <li data-id="g2"><input type="checkbox" id="g2"><label for="g2"><strong>M2</strong> Isaac：负重站稳（虚拟相机画面不抖）</label></li>
+          <li data-id="g1"><input type="checkbox" id="g1"><label for="g1"><strong>M1</strong> 机器人造型 + 头=相机造型 + 头质量/重心 notes写在 notes</label></li>
+          <li data-id="g2"><input type="checkbox" id="g2"><label for="g2"><strong>M2</strong> Isaac：头质量下站稳（虚拟相机画面不抖）</label></li>
           <li data-id="g3"><input type="checkbox" id="g3"><label for="g3"><strong>M3</strong> Isaac：直线走 5m 不摔</label></li>
           <li data-id="g4"><input type="checkbox" id="g4"><label for="g4"><strong>M4</strong> 跟拍 demo：目标动，机位跟，画面可用</label></li>
           <li data-id="g5"><input type="checkbox" id="g5"><label for="g5"><strong>M5+</strong> Isaac Lab 行走/稳定 · 真机可选</label></li>

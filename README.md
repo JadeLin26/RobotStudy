@@ -1,13 +1,13 @@
 ﻿# RobotStudy
 
-**双足运镜机器人** — 稳定行走 + 摄像机，仿真里代替摄像师完成特定镜头。
+**双足运镜机器人 — 头就是相机。** 稳定行走 + 头颈运镜，仿真里代替摄像师。
 
 | 文档 | 说明 |
 |------|------|
-| [docs/final-goal.md](docs/final-goal.md) | **最终目标**（必读） |
-| [docs/project-charter.md](docs/project-charter.md) | 阶段路线与完成标准 |
-| [todolist.html](todolist.html) | 每周节奏 + 任务分工 |
+| [docs/final-goal.md](docs/final-goal.md) | 最终目标（头=相机） |
+| [docs/project-charter.md](docs/project-charter.md) | Charter |
+| [todolist.html](todolist.html) | 进度 |
 
-**分工：** Blender 造型/相机位 · Isaac 行走与稳定 · Python 运镜参数 · AI 写代码你验收
+**分工：** Blender 头身造型 · Isaac 行走与头质量 · Python 运镜 · AI 写代码你验收
 
 https://github.com/JadeLin26/RobotStudy
