@@ -1,13 +1,11 @@
 ﻿# RobotStudy
 
-**双足运镜机器人 — 头就是相机。** 稳定行走 + 头颈运镜，仿真里代替摄像师。
+**1.6–2m 双足运镜机器人** — 头=相机（升降/横移/旋转）；走路并维持平衡。
 
 | 文档 | 说明 |
 |------|------|
-| [docs/final-goal.md](docs/final-goal.md) | 最终目标（头=相机） |
-| [docs/project-charter.md](docs/project-charter.md) | Charter |
+| [docs/mechanical-spec.md](docs/mechanical-spec.md) | **机械规格（必读）** |
+| [docs/final-goal.md](docs/final-goal.md) | 最终目标 |
 | [todolist.html](todolist.html) | 进度 |
-
-**分工：** Blender 头身造型 · Isaac 行走与头质量 · Python 运镜 · AI 写代码你验收
 
 https://github.com/JadeLin26/RobotStudy

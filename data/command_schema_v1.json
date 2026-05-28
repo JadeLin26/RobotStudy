@@ -1,17 +1,48 @@
 ﻿{
-  "version": "1.0",
+  "version": "1.1",
+  "robot": {
+    "height_m_min": 1.6,
+    "height_m_max": 2.0
+  },
   "channels": {
-    "head_yaw": {
+    "head_lift_m": {
+      "type": "float",
+      "unit": "m",
+      "min": -0.25,
+      "max": 0.25,
+      "note": "vertical slide, tune in mechanical-spec"
+    },
+    "head_lateral_m": {
+      "type": "float",
+      "unit": "m",
+      "min": -0.15,
+      "max": 0.15,
+      "note": "limited left-right"
+    },
+    "head_rotate_rad": {
+      "type": "float",
+      "unit": "rad",
+      "note": "continuous camera rotation"
+    },
+    "neck_pitch": {
       "type": "float",
       "unit": "rad"
     },
-    "emotion": {
+    "neck_yaw": {
+      "type": "float",
+      "unit": "rad"
+    },
+    "walk_speed": {
+      "type": "float",
+      "unit": "m/s",
+      "note": "body locomotion"
+    },
+    "balance_mode": {
       "type": "string",
       "enum": [
-        "idle",
-        "curious",
-        "happy",
-        "shy"
+        "stand",
+        "walk",
+        "stop"
       ]
     }
   }
