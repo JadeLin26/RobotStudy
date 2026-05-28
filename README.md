@@ -1,29 +1,16 @@
 ﻿# RobotStudy
 
-**BD-X Inspired Expressive Robot Character Study**  
-受 BD-X 启发的角色机器人表达研究 · [24 个月路线图](deep-research-report.md)
+**做一台类似 BD-X 的表达型机器人** — 自己设计，先在电脑里仿真。
 
-## 进度
-
-| 阶段 | 状态 |
+| 文档 | 说明 |
 |------|------|
-| Day 1 立项 | **完成**（2026-05-28） |
-| Day 2 环境 | 下一步 |
+| [docs/project-charter.md](docs/project-charter.md) | 项目是什么、做到什么算「做出来」 |
+| [docs/why-isaac.md](docs/why-isaac.md) | 为什么需要 Isaac（不是求职用的岔路） |
+| [todolist.html](todolist.html) | 学习/制作进度 |
+| [learning-log.md](learning-log.md) | 日志 |
 
-## 快速入口
+**分工：** Blender = 角色与表演 · Isaac Sim = 物理身体 · Python = 情绪/命令
 
-| 文件 | 用途 |
-|------|------|
-| [todolist.html](todolist.html) | 交互待办（14天 / 12周 / 24月） |
-| [docs/project-charter.md](docs/project-charter.md) | 范围、三档目标、技术栈 |
-| [docs/day1-scope-confirmation.md](docs/day1-scope-confirmation.md) | Day 1 范围签字 |
-| [learning-log.md](learning-log.md) | 每日学习日志 |
-| [docs/environment-notes.md](docs/environment-notes.md) | 硬件与工具版本（Day 2 填） |
+[deep-research-report.md](deep-research-report.md) 是调研笔记；**以 charter 里的创作目标为准。**
 
-## 技术栈（稳定车道）
-
-Blender 4.5 LTS+ · Isaac Sim 5.1 · Isaac Lab (5.1) · Python 3.11
-
-## Author
-
-[JadeLin26](https://github.com/JadeLin26)
+https://github.com/JadeLin26/RobotStudy
