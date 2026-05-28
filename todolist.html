@@ -104,6 +104,10 @@
     }
     .badge-day14 { background: rgba(255,107,138,0.2); color: var(--day14); }
     .badge-week { background: rgba(240,160,48,0.2); color: var(--week); }
+    .badge-ai { background: rgba(61,214,140,0.2); color: #3dd68c; }
+    .badge-you { background: rgba(255,107,138,0.2); color: #ff6b8a; }
+    .badge-both { background: rgba(240,160,48,0.2); color: #f0a030; }
+    .legend-box { font-size: 0.82rem; color: var(--muted); margin: 0 0 1rem; padding: 0.6rem 1rem; background: var(--surface2); border-radius: 8px; }
     .badge-month { background: rgba(199,125,255,0.2); color: var(--month); }
     ul.tasks { list-style: none; }
     ul.tasks li {
@@ -166,7 +170,7 @@
 <body>
   <header>
     <h1>BD-X Inspired Expressive Robot Character Study</h1>
-    <p>做自己的 BD-X 式机器人 · AI 辅助 · 以录屏产出为准</p>
+    <p>每日 <strong>2–6 小时</strong> · 每周 <strong>休 1 天</strong> · 约 12–30h/周</p>
     <div class="stats">
       <div class="stat">已完成 <strong id="done-count">0</strong> / <strong id="total-count">0</strong></div>
       <div class="stat">当前阶段 <strong id="current-phase">Day 1</strong></div>
@@ -175,7 +179,8 @@
   </header>
 
   <nav class="tabs">
-    <button class="active" data-tab="day14">14 天启动</button>
+    <button class="active" data-tab="weekly">每周节奏</button>
+    <button data-tab="phase1">阶段 1（约2周）</button>
     <button data-tab="week12">前 12 周</button>
     <button data-tab="month24">24 个月</button>
     <button data-tab="artifacts">交付物</button>
@@ -184,80 +189,41 @@
   </nav>
 
   <main>
-    <section class="panel active" id="panel-day14">
-      <p class="phase-title">最高优先级 — 未来 14 天</p>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 1</span> 仓库与项目定义</h3>
-        <ul class="tasks" data-group="day1">
-          <li data-id="d1-1"><input type="checkbox" id="d1-1"><label for="d1-1">创建 GitHub 仓库 RobotStudy<small>README + learning-log + project-charter</small></label></li>
-          <li data-id="d1-2"><input type="checkbox" id="d1-2"><label for="d1-2">写 project-charter：定位为「BD-X inspired study」而非复刻硬件<small>明确 MVP / Target / Stretch 三档范围</small></label></li>
-          <li data-id="d1-3"><input type="checkbox" id="d1-3"><label for="d1-3">创建 todolist.html 并 push 到远程<small>本页面即交付物之一</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 2</span> 开发环境</h3>
-        <ul class="tasks" data-group="day2">
-          <li data-id="d2-1"><input type="checkbox" id="d2-1"><label for="d2-1">安装 Git、VS Code、Python 3.11<small>版本写入 README / environment-notes</small></label></li>
-          <li data-id="d2-2"><input type="checkbox" id="d2-2"><label for="d2-2">运行 Isaac Sim Compatibility Checker<small>结果截图或文字记录进 repo</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 3–4</span> Python 入门</h3>
-        <ul class="tasks" data-group="day34">
-          <li data-id="d34-1"><input type="checkbox" id="d34-1"><label for="d34-1">用 AI 写第一个 Python 脚本<small>能读 JSON 即可，不必上网课</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 5</span> 第一个 Python 小项目</h3>
-        <ul class="tasks" data-group="day5">
-          <li data-id="d5-1"><input type="checkbox" id="d5-1"><label for="d5-1">写 parse_motion_channels.py<small>读取 motion_channels.json，打印 channel 与时间戳</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 6–7</span> Blender 角色草模</h3>
-        <ul class="tasks" data-group="day67">
-          <li data-id="d67-1"><input type="checkbox" id="d67-1"><label for="d67-1">Blender 原创机器人 blockout：身体、头、两条腿<small>不要过度细节</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 8</span> OpenUSD 基础</h3>
-        <ul class="tasks" data-group="day8">
-          <li data-id="d8-1"><input type="checkbox" id="d8-1"><label for="d8-1">Learn OpenUSD + 官方 intro：stage / prim / layer / xform<small>笔记写入 docs/</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 9–10</span> 绑定与动作</h3>
-        <ul class="tasks" data-group="day910">
-          <li data-id="d910-1"><input type="checkbox" id="d910-1"><label for="d910-1">简单 Blender rig<small>3 个 clip：idle / look_left / happy_bounce</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 11</span> USD 导出测试</h3>
-        <ul class="tasks" data-group="day11">
-          <li data-id="d11-1"><input type="checkbox" id="d11-1"><label for="d11-1">Blender 首次 USD 导出 + 记录什么能用、什么会坏<small>docs/pipeline_v0.md</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 12</span> Isaac Sim（若硬件通过）</h3>
-        <ul class="tasks" data-group="day12">
-          <li data-id="d12-1"><input type="checkbox" id="d12-1"><label for="d12-1">安装 Isaac Sim 5.1 stable + Basic Usage Tutorial<small>未通过 checker 则写远程/云 fallback 方案</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 13</span> JSON 命令 schema</h3>
-        <ul class="tasks" data-group="day13">
-          <li data-id="d13-1"><input type="checkbox" id="d13-1"><label for="d13-1">draft motion command schema v1<small>head_yaw, head_pitch, torso_pitch, emotion, blink, bounce_amp, step_hint</small></label></li>
-        </ul>
-      </div>
-      <div class="task-group">
-        <h3><span class="badge badge-day14">Day 14</span> 第一个可见 checkpoint</h3>
-        <ul class="tasks" data-group="day14">
-          <li data-id="d14-1"><input type="checkbox" id="d14-1"><label for="d14-1">截图拼贴 + 15–30 秒 clip<small>中英双语 devlog 各一篇</small></label></li>
-        </ul>
-      </div>
+    <section class="panel active" id="panel-weekly">
+      <div class="legend-box"><strong>图例：</strong> [AI做] 验收 · [你必做] Blender/录屏 · [一起] 你操作AI记录</div>
+      <p class="phase-title">每周 6 天 + 1 休（默认周日）</p>
+      <div class="task-group"><ul class="tasks" style="list-style:none">
+          <li style="padding:0.6rem 1rem;border-bottom:1px solid var(--border)"><strong>周一</strong> 2-3h · 验收AI产出 + 15min 定角色</li>
+          <li style="padding:0.6rem 1rem;border-bottom:1px solid var(--border)"><strong>周二三</strong> 3-6h · Blender 造型/绑骨</li>
+          <li style="padding:0.6rem 1rem;border-bottom:1px solid var(--border)"><strong>周四</strong> 2-3h · 跑 Checker + Python（你点跑）</li>
+          <li style="padding:0.6rem 1rem;border-bottom:1px solid var(--border)"><strong>周五六</strong> 深化/录屏；可选 Isaac</li>
+          <li style="padding:0.6rem 1rem"><strong>今日只2h？</strong> 优先 Blender 或只验收</li>
+      </ul></div>
     </section>
 
-    <section class="panel" id="panel-week12">
+    <section class="panel" id="panel-phase1">
+      <p class="phase-title">阶段 1（约 2 周）— 角色 + JSON + 首次录屏</p>
+      <div class="task-group"><h3><span class="badge badge-ai">AI</span> 代写（你约 1h 验收合计）</h3><ul class="tasks">
+          <li data-id="ai-1"><input type="checkbox" id="ai-1"><label for="ai-1">Checker 步骤 + environment-notes 模板</label></li>
+          <li data-id="ai-2"><input type="checkbox" id="ai-2"><label for="ai-2">parse_motion_channels.py + 示例 JSON</label></li>
+          <li data-id="ai-3"><input type="checkbox" id="ai-3"><label for="ai-3">command_schema_v1.json</label></li>
+          <li data-id="ai-4"><input type="checkbox" id="ai-4"><label for="ai-4">pipeline_v0.md + devlog 草稿</label></li>
+      </ul></div>
+      <div class="task-group"><h3><span class="badge badge-you">你</span> 必做（10-20h 累计）</h3><ul class="tasks">
+          <li data-id="you-1"><input type="checkbox" id="you-1"><label for="you-1">定气质（15min）</label></li>
+          <li data-id="you-2"><input type="checkbox" id="you-2"><label for="you-2">Blender 造型 blockout</label></li>
+          <li data-id="you-3"><input type="checkbox" id="you-3"><label for="you-3">rig + idle / look / happy 三姿势</label></li>
+          <li data-id="you-4"><input type="checkbox" id="you-4"><label for="you-4">录 15-30 秒展示 clip</label></li>
+      </ul></div>
+      <div class="task-group"><h3><span class="badge badge-both">可选</span></h3><ul class="tasks">
+          <li data-id="opt-1"><input type="checkbox" id="opt-1"><label for="opt-1">USD 导出（你点导出 ~30min）</label></li>
+          <li data-id="opt-2"><input type="checkbox" id="opt-2"><label for="opt-2">Isaac Sim 5.1（可顺延到第3周）</label></li>
+      </ul></div>
+      <div class="task-group"><h3><span class="badge badge-day14">done</span> 已完成</h3><ul class="tasks">
+          <li data-id="d1-done" class="done"><input type="checkbox" id="d1-done" checked disabled><label for="d1-done">仓库 + charter + 定位</label></li>
+      </ul></div>
+
+    id="panel-week12">
       <p class="phase-title">前 12 周 — 决定 24 个月计划能否存活</p>
       <div class="task-group">
         <h3><span class="badge badge-week">Week 1</span> 环境与仓库</h3>
