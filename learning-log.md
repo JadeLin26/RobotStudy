@@ -86,3 +86,7 @@
 ## 2026-05-28 — 机械规格
 
 身高 1.6–2m；头=相机；升降+有限左右+自由旋转；双足行走+维持平衡。见 `docs/mechanical-spec.md`。
+
+## 调研 — Open Duck Mini
+
+可作 BDX 风格双足 **行走/平衡** 学习管线（42cm，MuJoCo），不等于 1.6m 摄像师目标。见 `docs/openduck-learning-path.md`。
